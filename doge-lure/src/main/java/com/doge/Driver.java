@@ -23,7 +23,7 @@ public class Driver {
 			String text="";
 			
 			for(int i =0; i<characters.size();i++) {
-				text += characters.get(i).name+"<br>";				
+				text += characters.get(i)+"<br>";				
 			}
 			
 			ctx.html(text);
