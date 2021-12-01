@@ -29,6 +29,17 @@ public class Driver {
 			ctx.html(text);
 		});
 		
+		app.get("/dogelist", ctx->{
+			String t="";
+			
+			for(int i =0; i<characters.size();i++) {
+				t += characters.get(i)+"<br>";				
+			}
+			
+			ctx.html(t);
+			
+		});
+		
 	}
 
 }
